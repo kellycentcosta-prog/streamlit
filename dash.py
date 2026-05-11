@@ -6,9 +6,7 @@ import matplotlib.pyplot as plt
 st.header('Dashboard analítico')
 
 #importa a base de dados
-import os
-caminho = os.path.join(os.path.dirname(os.path.abspth(_file_)), 'dados_dash.csv')
-df = pd.read_csv(caminho)
+df = pd.read_csv('dados_dash.csv')
 
 #=====================================
 
