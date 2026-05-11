@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.header('Dashboard analítico')
 
 #importa a base de dados
-df = pd.read_csv('dados_dash.csv', encoding='utf-8')
+df = pd.read_csv('dados_dash.csv', encoding='latin1')
 
 #=====================================
 
