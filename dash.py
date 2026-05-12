@@ -16,7 +16,7 @@ df = pd.read_csv('dados_dash.csv', encoding='latin1')
 #ordena em ordem alfabetica, converte a coluna para string
 #e retorna  valores únicos
 st.write(df.columns.tolist())
-clientes = sorted(df['cliente_nome'].astype(str).unique())
+clientes = sorted(df['cliente_nome'].dropna()astype(str).unique())
 st.sidebar.title('Filtros')
 
 #filtros por cliente
